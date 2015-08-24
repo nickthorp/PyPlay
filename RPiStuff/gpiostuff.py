@@ -12,4 +12,8 @@ GPIO.setup(23, GPIO.OUT)
 
 GPIO.output(23, GPIO.HIGH)
 
+p = GPIO.PWM(18, 50)
+p.start(3)
+p.ChangeDutyCycle(7.5)
+p.stop()
 GPIO.cleanup()
