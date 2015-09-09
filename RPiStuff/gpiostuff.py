@@ -17,7 +17,7 @@ loopctrl = True
 while loopctrl:
     angle = input('Give an angle between 0 and 150 degrees or type EXIT to quit: ')
 
-    if int(angle):
+    if angle.isnumeric():
         timing = int(angle) / 100 + 0.6
         if int(angle) < 0 or int(angle) > 150:
             print("Please enter a value between 0 and 150 degrees!\n")
